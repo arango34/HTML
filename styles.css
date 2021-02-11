@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+    font-family: fantasy;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul {
+    margin: 0;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav a {
+    display: inline-block;
+    padding: .5rem;
+    color: white;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.main-nav {
+    text-align: center;
+}
+
+.main-nav li {
+    padding: 0 7%;
+    font-size: 1.5em;
+}
+
+.main-header {
+    background-image: url("images/background.jpg");
+    background-size: auto;
+    background-position: center;
+    height: 25rem; 
+    border-bottom: 1.5px solid black;
+}
+
+.about-store-header {
+    height: 20rem;
+}
+
+.name{
+    text-shadow: 0 0 7px rgba(0, 0, 0, 0.6), 0 0 7px rgba(0, 0, 0, 0.6), 
+    0 0 7px rgba(0, 0, 0, 0.6), 0 0 7px rgba(0, 0, 0, 0.6);    
+    color: white;     
+    font-family: 'Lobster', cursive;      
+    font-weight: 100;
+}
+
+.name-large {
+    margin: 4rem 0 .75rem 5rem;
+    text-align: center;
+    margin-right: 5rem;
+    font-size: 8rem;
+    display: block;     
+    text-align: center;
+}
+
+.name-large-about {
+    margin: 1.5rem 0 .75rem 5rem;
+    text-align: center;
+    margin-right: 5rem;
+    font-size: 8rem;
+    display: block;     
+    text-align: center;
+    color: white;
+}
+
+.content-section {
+    margin: 1rem;
+    color: rgb(29, 29, 29);
+}
+
+.container {
+    margin: 0 auto;
+    padding: 1.5rem;
+    position: relative;
+}
+
+.section-header {
+    text-align: center;
+    font-size: 3rem;
+    text-decoration: underline;
+    color: rgb(36, 36, 36);
+}
+
+.about-image {
+   float: left;
+   margin: 15px 15px 15px 0;
+   border-radius: .2rem;
+}
+
+.main-footer {
+    background-color: rgb(36, 36, 36);
+    margin: 2rem 1rem 1rem 1rem;
+
+}
+
+.main-footer-container {
+    display: flex;
+    align-items: center;
+    height: 6rem;
+    border: solid rgba(0, 0, 0, 0.082) .05rem;
+}
+
+.main-footer-container ul {
+    flex-grow: 1;
+    text-align: end;
+}
+
+.footer-nav li {
+    padding: 0 .5rem;
+}
+
+.name-small {
+    font-size: 3rem;
+    text-shadow: 0 0 9px rgba(0, 0, 0, 0.9), 0 0 9px rgba(0, 0, 0, 0.9), 
+    0 0 9px rgba(0, 0, 0, 0.9), 0 0 9px rgba(0, 0, 0, 0.9);
+}
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: .67rem;
+    cursor: pointer;
+    color: rgb(20, 20, 20);
+}
+
+.btn-header { 
+    display: block;
+    position: absolute;
+    top: 10rem;
+    left: 2rem;
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0.3);            
+    font-size: 2.5vw;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    color: white;
+    width: 25%;
+}
+
+.btn-header:hover {
+    background-color:rgba(0, 0, 0, 0.6);
+}
+
+.center-play-btn {
+    position: relative;
+}
+
+
+.btn-play {
+    position: absolute;
+    margin-top: 3rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px solid white;
+    background-color: rgba(0, 0, 0, 0.3);       
+    font-size: 3.5rem;
+    border-radius: 50%;
+    padding: 0;
+    width: 110px;
+    height: 110px;
+    color: white;    
+}
+
+.btn-play:hover {
+    background-color:rgba(0, 0, 0, 0.6);
+}
+
+.tour-section {
+    padding: 1.5rem;
+    margin: .5rem 5rem;
+}
+
+.tour-row {
+    border-bottom: 1px solid black;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+.tour-row:last-child {
+    border-bottom: none;
+}
+
+.tour-item {
+    display: inline-block;
+    padding-right: .5rem;
+}
+
+.tour-date {
+    font-weight: bold;
+    width: 11%;
+}
+
+.tour-city {
+    width: 24%;
+}
+
+.tour-venue {
+    width: 42%;
+}
+
+.tour-btn {
+    max-width: 19%;
+    background-color: rgb(241, 255, 50);
+    border-radius: .3rem;
+    font-size: 1rem;
+    border: solid rgba(0, 0, 0, 0.082) 2px;
+}
+
+.tour-btn:hover {
+    background-color: rgb(166, 175, 37);
+}
+
+.store-item {
+    margin: 30px;
+}
+
+.store-item-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.store-item-details {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.store-item-price {
+    flex-grow: 1;
+}
+
+.shop-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+.store-btn {
+    max-width: none;
+}
+
+.cart-header {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5rem;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 45%;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2rem;
+}
+
+.cart-qauntity {
+    width: 35%;
+}
+
+.cart-item-title {
+    margin-left: .5rem;
+    font-size: 1.2rem;
+}
+
+.btn-danger {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3rem;
+}
+
+.btn-danger:hover {
+    background-color: #CC4C4C;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid  rgba(0, 0, 0, 0.082);
+    background-color: #eee;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-right: 25px;
+}
+
+.cart-center {
+    margin-right: 5rem;
+    margin-left: 12rem;
+}
+
+
+
+.cart-total {
+    text-align: end;
+    margin-right: 120px;
+    margin-top: 10px; 
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-right: 20px;
+}
+
+.center-btn button {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.75rem; 
+    border: solid rgba(0, 0, 0, 0.226) 2px;
+    overflow: hidden;
+}
+
+.icon {
+    width: 2.5rem;
+    height: auto;
+}
+
+.album {
+    height: 20rem;
+}
+
+.thumb {
+    width: 5rem;
+    height: auto;
+}
